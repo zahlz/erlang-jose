@@ -27,7 +27,6 @@ defmodule JOSE.Mixfile do
 
   defp deps() do
     [
-      # {:cutkey, github: "potatosalad/cutkey", only: [:dev, :test]},
       {:jason, "~> 1.1", only: [:dev, :test]},
       {:jsone, "~> 1.4", only: [:dev, :test]},
       {:jsx, "~> 2.9", only: [:dev, :test]},

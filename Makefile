@@ -8,8 +8,8 @@ dep_jiffy = git git://github.com/davisp/jiffy.git master
 dep_jsone = git git://github.com/sile/jsone.git master
 dep_jsx = git git://github.com/talentdeficit/jsx.git v2.10.0
 dep_keccakf1600 = git git://github.com/potatosalad/erlang-keccakf1600.git master
-dep_libdecaf = git https://github.com/talklittle/erlang-libdecaf.git otp-23-remove-erl-interface
-dep_libsodium = git https://github.com/talklittle/erlang-libsodium.git otp-23-remove-erl-interface
+dep_libdecaf = git https://github.com/zahlz/erlang-libdecaf.git master
+dep_libsodium = git https://github.com/zahlz/erlang-libsodium.git master
 dep_ojson = git git://github.com/potatosalad/erlang-ojson.git master
 dep_proper = git git://github.com/proper-testing/proper.git v1.3
 
@@ -50,4 +50,4 @@ docker-shell::
 docker-test::
 	$(gen_verbose) docker run \
 		-v "$(shell pwd)":"/build/jose" "${DOCKER_OTP_VERSION}" \
-		sh -c 'cd jose && make ct'
+		sh -c 'cd /build/jose && make ct'
